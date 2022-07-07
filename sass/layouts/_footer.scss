@@ -1,0 +1,131 @@
+.page-footer {
+  background-color: var(--footer-bg-color);
+  padding: 60px 0;
+
+  
+  & .container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__social-link {
+    color: var(--white-color);
+    background-color: var(--connect-bg-cos-color);
+  }
+}
+
+
+.contacts-block {
+  margin-right: 70px;
+}
+
+.logo-footer {
+  color: var(--white-color);
+}
+
+.footer-address {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--white-color);
+  margin-top: 20px;
+}
+
+.contacts-list .item:not(:first-child) {
+  margin-top: 9px;
+}
+
+
+.contacts-list__link {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--footer-contacts-color);
+}
+
+
+.connect-block, .subscription {
+  &__title {
+    display: block;
+    margin-bottom: 20px;
+    
+    font-weight: 700;
+    /* font-size: 14px; */
+    line-height: 1.143;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+  }
+}
+
+
+
+.subscription {
+  margin-left: auto;
+
+  &__field {
+    display: flex;
+  }
+
+  &__input {
+    display: block;
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    border: 1px solid var(--footer-input-bg-color);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: var(--white-color);
+    background-color: transparent;
+  }
+
+  &__input::placeholder {
+    color: var(--footer-contacts-color);
+  }
+}
+
+
+
+
+.footer-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  overflow: hidden;
+
+
+  &:hover, &:focus {
+    background-color: var(--accent-2-color);
+  }
+
+  /* .footer-button .icon-out {
+      transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  } */
+  & .icon-in {
+    position: absolute;
+    right: 27px;
+    transform: translate(-40px, 40px);
+    /* transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1); */
+  }
+
+
+  &:hover .icon-out,
+  &:focus .icon-out {
+    transform: translate(40px, -40px);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &:hover .icon-in,
+  &:focus .icon-in {
+    transform: translateY(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+}
+
+
+

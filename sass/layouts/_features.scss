@@ -1,0 +1,67 @@
+.feature-list {
+  @media screen and (min-width: $tablet) {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: $gap;
+  }
+}
+
+.feature-list__item {
+  // flex-basis: 450px;
+  // width: 450px;
+
+  @media screen and (min-width: $mobile) {
+    // flex-basis: 354px;
+    width: 450px;
+  }
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+  margin-bottom: $gap;
+    }
+
+
+  @media screen and (min-width: $tablet) {
+    // flex-basis: 354px;
+    width: 354px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    // flex-basis: 270px;
+    width: 270px;
+  }
+
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
+}
+
+
+.feature-list__icon-field {
+    @include flexXY();
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--team-bg-color);
+  border-radius: 4px;
+}
+
+.feature-list__title {
+    @include fonts(14px, 700, 1.143);
+  // font-size: 14px;
+  // font-weight: 700;
+  // line-height: 1.143;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+  text-align: center;  
+  } 
+}
+
+.feature-list__text {
+  font-weight: 400;
+}

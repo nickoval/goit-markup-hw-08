@@ -1,0 +1,71 @@
+.clients-list {
+  display: flex;
+  gap: $gap;
+
+  @media screen and (max-width: calc($desktop - 1px)) {
+    flex-wrap: wrap;
+  }
+
+}
+
+.clients-list__item {
+  @media screen and (min-width: $mobile) {
+    width: calc((100% - 1 * $gap) / 2 );
+  }
+  
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 2 * $gap) / 3);
+  }
+  
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 5 * $gap) / 6);
+  }
+}
+
+
+
+// .clients-list 
+.client-list__link {
+  @include flexXY();
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+
+  height: 92px;
+  // width: 210px;
+  color: var(--social-link-color);
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover {
+    color: var(--accent-color);
+  }
+  
+  &:focus {
+    color: var(--accent-color);
+    outline: none;
+  }
+
+  // @media screen and (min-width: $mobile) {
+  //   width: 210px;
+  // }
+  
+  // @media screen and (min-width: $tablet) {
+  //   width: 226px;
+  // }
+  
+  // @media screen and (min-width: $desktop) {
+  //   width: 170px;
+  // }
+}
+
+.client-list__icon {
+  fill: currentColor
+}
+
+// .proverka {
+//   width: calc((100% - 2 * 30px) / 3);
+//   height: 100px;
+//   background-color: coral;
+// }

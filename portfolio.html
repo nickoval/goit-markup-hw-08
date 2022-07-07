@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio for homework8</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav class="header-nav">
+          <a href="./" class="logo link page-header__logo"
+            >Web<span class="logo-header">Studio</span></a
+          >
+          <ul class="site-nav">
+            <li class="item"><a class="link site-nav__link" href="./index.html">Студия</a></li>
+            <li class="item">
+              <a class="current link site-nav__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="item"><a class="link site-nav__link" href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts-nav">
+          <li class="item">
+            <a class="link contacts-nav__link" href="mailto:info@devstudio.com">
+              <svg class="contacts-nav__icon" width="16" height="12" aria-label="icon envelope">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a class="link contacts-nav__link" href="tel:+380961111111">
+              <svg class="contacts-nav__icon" width="10" height="16" aria-label="icon smartphone">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Примеры работ (Портфолио)</h1>
+
+          <ul class="filter-list">
+            <li class="filter-list__item">
+              <button type="button" class="filter-button">Все</button>
+            </li>
+            <li class="filter-list__item">
+              <button type="button" class="filter-button">Веб-сайты</button>
+            </li>
+            <li class="filter-list__item">
+              <button type="button" class="filter-button">Приложения</button>
+            </li>
+            <li class="filter-list__item">
+              <button type="button" class="filter-button">Дизайн</button>
+            </li>
+            <li class="filter-list__item">
+              <button type="button" class="filter-button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <ul class="examples">
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="example-img-thumb">
+                  <img src="./images/example1.jpg" alt="Пример сайта" width="370" height="294" />
+                  <p class="popup-text">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
+                <div class="examples__field">
+                  <h2 class="examples__title">Технокряк</h2>
+                  <p class="examples__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="example-img-thumb">
+                  <img src="./images/example2.jpg" alt="Пример сайта" width="370" height="294" />
+                  <p class="popup-text">
+                    Варкалось. Хливкие шорьки Пырялись по наве, И хрюкотали зелюки, Как мюмзики в
+                    мове.
+                  </p>
+                </div>
+                <div class="examples__field">
+                  <h2 class="examples__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="examples__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="example-img-thumb">
+                  <img src="./images/example3.jpg" alt="Пример сайта" width="370" height="294" />
+                  <p class="popup-text">
+                    О, бойся Бармаглота, сын! Он так свирлеп и дик! А в глу́ше ры́мит исполин —
+                    Злопастный Брандашмыг!
+                  </p>
+                </div>
+                <div class="examples__field">
+                  <h2 class="examples__title">Ресторан Seafood</h2>
+                  <p class="examples__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="example-img-thumb">
+                  <img src="./images/example4.jpg" alt="Пример сайта" width="370" height="294" />
+                  <p class="popup-text">
+                    Но взял он меч, и взял он щит, Высоких полон дум. В глущобу путь его лежит Под
+                    дерево Тумтум.
+                  </p>
+                </div>
+                <div class="examples__field">
+                  <h2 class="examples__title">Проект Prime</h2>
+                  <p class="examples__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="example-img-thumb">
+                  <img src="./images/example5.jpg" alt="Пример сайта" width="370" height="294" />
+                  <p class="popup-text">
+                    Он стал под дерево и ждёт. И вдруг граахнул гром — Летит ужасный Бармаглот И
+                    пылкает огнём!
+                  </p>
+                </div>
+                <div class="examples__field">
+                  <h2 class="examples__title">Проект Boxes</h2>
+                  <p class="examples__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="example-img-thumb">
+                  <img src="./images/example6.jpg" alt="Пример сайта" width="370" height="294" />
+                  <p class="popup-text">
+                    Раз-два, раз-два! Горит трава, Взы-взы — стрижает меч, Ува! Ува! И голова
+                    Барабардает с плеч!
+                  </p>
+                </div>
+                <div class="examples__field">
+                  <h2 class="examples__title">Inspiration has no Borders</h2>
+                  <p class="examples__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="example-img-thumb">
+                  <img src="./images/example7.jpg" alt="Пример сайта" width="370" height="294" />
+                  <p class="popup-text">
+                    О светозарный мальчик мой! Ты победил в бою! О храброславленный герой, Хвалу
+                    тебе пою!
+                  </p>
+                </div>
+                <div class="examples__field">
+                  <h2 class="examples__title">Издание Limited Edition</h2>
+                  <p class="examples__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="example-img-thumb">
+                  <img src="./images/example8.jpg" alt="Пример сайта" width="370" height="294" />
+                  <p class="popup-text">
+                    Варкалось. Хливкие шорьки Пырялись по наве. И хрюкотали зелюки, Как мюмзики в
+                    мове.
+                  </p>
+                </div>
+                <div class="examples__field">
+                  <h2 class="examples__title">Проект LAB</h2>
+                  <p class="examples__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__item">
+              <a class="examples__link link" href="">
+                <div class="example-img-thumb">
+                  <img src="./images/example9.jpg" alt="Пример сайта" width="370" height="294" />
+                  <p class="popup-text">
+                    Twas brillig, and the slithy toves Did gyre and gimble in the wabe; All mimsy
+                    were the borogoves, And the mome raths outgrabe.
+                  </p>
+                </div>
+                <div class="examples__field">
+                  <h2 class="examples__title">Growing Business</h2>
+                  <p class="examples__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="contacts-block">
+          <a href="./" class="logo link">Web<span class="logo-footer">Studio</span></a>
+          <address id="contacts" class="footer-address">
+            <ul class="contacts-list">
+              <li class="item">
+                <a
+                  href="https://goo.gl/maps/wTGTLdtdXk9S9kmZ7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link"
+                  >г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="item">
+                <a class="contacts-list__link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="item">
+                <a class="contacts-list__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="connect-block">
+          <b class="connect-block__title">Присоединяйтесь</b>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="" class="social-list__link link page-footer__social-link">
+                <svg class="social-list__icon" width="20" height="20" aria-label="instagram">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link link page-footer__social-link">
+                <svg class="social-list__icon" width="20" height="20" aria-label="twitter">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link link page-footer__social-link">
+                <svg class="social-list__icon" width="20" height="20" aria-label="facebook">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link link page-footer__social-link">
+                <svg class="social-list__icon" width="20" height="20" aria-label="linkedin">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="subscription">
+          <b class="subscription__title">Подпишитесь на рассылку</b>
+          <form class="subscription__field">
+            <input type="email" name="mail" class="subscription__input" placeholder="E-mail" />
+            <button type="button" class="main-button footer-button">
+              Подписаться
+              <svg class="icon-out" width="24" height="24" aria-label="">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+              <svg class="icon-in" width="24" height="24" aria-label="">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

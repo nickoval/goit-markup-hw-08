@@ -1,0 +1,16 @@
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.167;
+  text-align: center;
+
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+
+
+  @media screen and (max-width: calc($desktop - 1px)) {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
