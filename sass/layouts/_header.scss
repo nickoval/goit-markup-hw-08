@@ -27,19 +27,45 @@
   height: 40px;
   border: none;
   background-color: transparent;
+  cursor: pointer;
+  outline: 1px solid red;
 }
 
-// .menu-button .icon-menu-close {
-//   display: none;
-// }
+.mob-menu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--backdrop-bg-color);
+  opacity: 1;
+  visibility: visible;
 
-// .menu-button.is-open .icon-menu-close {
-//   display: block;
-// }
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-// .menu-button.is-open .icon-menu {
-//   display: none;
-// }
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+
+
+
+.menu-button .icon-menu-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-menu-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
 
 
 .header-nav {

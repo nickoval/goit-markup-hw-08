@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container">
         <nav class="header-nav" id="navigation">
           <a href="./" class="logo link page-header__logo"
@@ -55,18 +55,36 @@
           </li>
         </ul>
 
-        <button type="button" class="menu-button is-open">
-          <svg width="24" height="18" aria-label="Переключатель мобильного меню">
-            <use class="icon-menu" href="./images/icons/symbol-defs.svg#icon-menu"></use>
-            <use
-              class="icon-menu-close"
-              href="./images/icons/symbol-defs.svg#icon-menu-close"
-            ></use>
-          </svg>
-        </button>
       </div>
-    </header> -->
+    </header>
 
+    <button type="button" class="menu-button is-open menu-open-btn">
+      <svg width="24" height="24" aria-label="Переключатель мобильного меню">
+        <use class="icon-menu" href="./images/icons/symbol-defs.svg#icon-menu"></use>
+        <use
+          class="icon-menu-close"
+          href="./images/icons/symbol-defs.svg#icon-menu-close"
+        ></use>
+      </svg>
+    </button>
+
+    <div class="mob-menu is-hidden">
+      <button type="button" class="close-open-btn" data-modal-close>
+        <svg class="close-modal-button__icon" width="24" height="24" aria-label="close">
+          <use href="./images/icons/symbol-defs.svg#icon-menu-40"></use>            
+        </svg>
+      </button>   
+    </div>
+
+    <!-- <button type="button" class="menu-button">
+      <svg width="24" height="24" aria-label="Переключатель мобильного меню">
+        <use
+          class="icon-menu-close"
+          href="./images/icons/symbol-defs.svg#icon-menu-close"
+        ></use>
+      </svg>
+    </button> -->
+    
     <main>
       <!-- <section class="hero">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -454,7 +472,8 @@
       <div class="modal">
         <button type="button" class="close-modal-button" data-modal-close>
           <svg class="close-modal-button__icon" width="24" height="24" aria-label="close">
-            <use href="./images/icons.svg#icon-close"></use>
+            <!-- <use href="./images/icons.svg#icon-close"></use> -->
+            <use href="./images/icons/symbol-defs.svg#icon-menu-40"></use>            
           </svg>
         </button>
 
@@ -558,6 +577,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <!-- <script src="./js/menu.js"></script> -->
 
     <!-- Динамическая корректировка паддинга у БОДИ в зависимости от высоты Хэдэра (Репета вебинар-9 61я минута) -->
     <!-- <script>
@@ -578,6 +598,25 @@
         });
       })();
     </script>
+
+<script>
+  (() => {
+  const refs = {
+    openMenuBtn: document.querySelector('.menu-open-btn'),
+    closeMenuBtn: document.querySelector('.close-open-btn'),
+    menu: document.querySelector('.mob-menu'),
+    body: document.querySelector('body'),
+  };
+  refs.openMenuBtn.addEventListener('click', toggleMenu);
+  refs.closeMenuBtn.addEventListener('click', toggleMenu);
+  function toggleMenu() {
+    refs.menu.classList.toggle('is-hidden');
+    refs.body.classList.toggle('no-scroll');
+  }
+})();
+</script>
+
+
 
     <!-- <script>
       (() => {
