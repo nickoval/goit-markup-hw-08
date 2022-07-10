@@ -4,6 +4,7 @@
 
   @media screen and (max-width: calc($desktop - 1px)) {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
 }

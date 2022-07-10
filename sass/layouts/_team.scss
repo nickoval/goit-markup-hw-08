@@ -12,7 +12,8 @@
 }
 
 .team-list__item {
-  width: 270px;
+  width: 100%;
+  // 270px;
   background-color: var(--white-color);
   text-align: center;
   /* padding-bottom: 30px; */
@@ -53,6 +54,7 @@
 
 
 .team-list__img {
+  width: 100%;
   margin-bottom: 30px;
 }
 
