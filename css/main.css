@@ -495,7 +495,7 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to bottom, var(--hero-gradient-color), var(--hero-gradient-color)), url(../images/mobile/hero@2x.jpg);
+    background-image: url(../images/mobile/hero@2x.jpg);
   }
 }
 @media screen and (min-width: 480px) {
@@ -505,7 +505,7 @@ img {
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to bottom, var(--hero-gradient-color), var(--hero-gradient-color)), url(../images/tablet/hero@2x.jpg);
+    background-image: url(../images/tablet/hero@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -515,7 +515,7 @@ img {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to bottom, var(--hero-gradient-color), var(--hero-gradient-color)), url(../images/desktop/hero@2x.jpg);
+    background-image: url(../images/desktop/hero@2x.jpg);
   }
 }
 .hero__title {
@@ -963,7 +963,6 @@ img {
 
 .examples {
   display: flex;
-  align-content: stretch;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--examples-gap));
   margin-left: calc(-1 * var(--examples-gap));
@@ -985,11 +984,10 @@ img {
   }
 }
 .examples__link {
-  display: block;
-  height: 100%;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
+  height: 100%;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .examples__link:hover, .examples__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1043,7 +1041,7 @@ img {
 }
 @media screen and (max-width: 350px) {
   .popup-text {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 .examples__link:hover .popup-text, .examples__link:focus .popup-text {

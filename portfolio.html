@@ -44,10 +44,10 @@
           <nav class="header-nav" id="navigation">
             <ul class="site-nav">
               <li class="item">
-                <a class="current link site-nav__link" href="./index.html">Студия</a>
+                <a class="link site-nav__link" href="./index.html">Студия</a>
               </li>
               <li class="item">
-                <a class="link site-nav__link" href="./portfolio.html">Портфолио</a>
+                <a class="current link site-nav__link" href="./portfolio.html">Портфолио</a>
               </li>
               <li class="item"><a class="link site-nav__link" href="#contacts">Контакты</a></li>
             </ul>
@@ -116,13 +116,20 @@
             <li class="examples__item">
               <a class="examples__link link" href="">
                 <div class="example-img-thumb">
-                  <img
-                    src="./images/example1.jpg"
+                  <picture>
+                    <source srcset="./images/desktop/example1.jpg 1x, ./images/desktop/example1@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/tablet/example1.jpg 1x, ./images/tablet/example1@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/mobile/example1.jpg 1x, ./images/mobile/example1@2x.jpg 2x" media="(min-width: 480px)" />
+                    <img src="./images/mobile/example1.jpg" class="examples__img" alt="Пример сайта" width="450" height="294"/>
+                  </picture>
+                  <!-- <img
+                  srcset="./images/desktop/example1.jpg 1x, ./images/desktop/example1@2x.jpg 2x"
+                    src="./images/desktop/example1.jpg"
                     class="examples__img"
                     alt="Пример сайта"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="popup-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -138,13 +145,20 @@
             <li class="examples__item">
               <a class="examples__link link" href="">
                 <div class="example-img-thumb">
-                  <img
-                    src="./images/example2.jpg"
+                  <picture>
+                    <source srcset="./images/desktop/example2.jpg 1x, ./images/desktop/example2@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/tablet/example2.jpg 1x, ./images/tablet/example2@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/mobile/example2.jpg 1x, ./images/mobile/example2@2x.jpg 2x" media="(min-width: 480px)" />
+                    <img src="./images/mobile/example2.jpg" class="examples__img" alt="Пример сайта" width="450" height="294"/>
+                  </picture>
+                  <!-- <img
+                  srcset="./images/desktop/example2.jpg 1x, ./images/desktop/example2@2x.jpg 2x"
+                    src="./images/desktop/example2.jpg"
                     class="examples__img"
                     alt="Пример сайта"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="popup-text">
                     Варкалось. Хливкие шорьки Пырялись по наве, И хрюкотали зелюки, Как мюмзики в
                     мове.
@@ -159,13 +173,20 @@
             <li class="examples__item">
               <a class="examples__link link" href="">
                 <div class="example-img-thumb">
-                  <img
-                    src="./images/example3.jpg"
+                  <picture>
+                    <source srcset="./images/desktop/example3.jpg 1x, ./images/desktop/example3@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/tablet/example3.jpg 1x, ./images/tablet/example3@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/mobile/example3.jpg 1x, ./images/mobile/example3@2x.jpg 2x" media="(min-width: 480px)" />
+                    <img src="./images/mobile/example3.jpg" class="examples__img" alt="Пример сайта" width="450" height="294"/>
+                  </picture>
+                  <!-- <img
+                  srcset="./images/desktop/example3.jpg 1x, ./images/desktop/example3@2x.jpg 2x"
+                    src="./images/desktop/example3.jpg"
                     class="examples__img"
                     alt="Пример сайта"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="popup-text">
                     О, бойся Бармаглота, сын! Он так свирлеп и дик! А в глу́ше ры́мит исполин —
                     Злопастный Брандашмыг!
@@ -180,13 +201,20 @@
             <li class="examples__item">
               <a class="examples__link link" href="">
                 <div class="example-img-thumb">
-                  <img
-                    src="./images/example4.jpg"
+                  <picture>
+                    <source srcset="./images/desktop/example4.jpg 1x, ./images/desktop/example4@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/tablet/example4.jpg 1x, ./images/tablet/example4@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/mobile/example4.jpg 1x, ./images/mobile/example4@2x.jpg 2x" media="(min-width: 480px)" />
+                    <img src="./images/mobile/example4.jpg" class="examples__img" alt="Пример сайта" width="450" height="294"/>
+                  </picture>
+                  <!-- <img
+                  srcset="./images/desktop/example4.jpg 1x, ./images/desktop/example4@2x.jpg 2x"
+                    src="./images/desktop/example4.jpg"
                     class="examples__img"
                     alt="Пример сайта"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="popup-text">
                     Но взял он меч, и взял он щит, Высоких полон дум. В глущобу путь его лежит Под
                     дерево Тумтум.
@@ -201,13 +229,20 @@
             <li class="examples__item">
               <a class="examples__link link" href="">
                 <div class="example-img-thumb">
-                  <img
-                    src="./images/example5.jpg"
+                  <picture>
+                    <source srcset="./images/desktop/example5.jpg 1x, ./images/desktop/example5@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/tablet/example5.jpg 1x, ./images/tablet/example5@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/mobile/example5.jpg 1x, ./images/mobile/example5@2x.jpg 2x" media="(min-width: 480px)" />
+                    <img src="./images/mobile/example5.jpg" class="examples__img" alt="Пример сайта" width="450" height="294"/>
+                  </picture>
+                  <!-- <img
+                  srcset="./images/desktop/example5.jpg 1x, ./images/desktop/example5@2x.jpg 2x"
+                    src="./images/desktop/example5.jpg"
                     class="examples__img"
                     alt="Пример сайта"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="popup-text">
                     Он стал под дерево и ждёт. И вдруг граахнул гром — Летит ужасный Бармаглот И
                     пылкает огнём!
@@ -222,13 +257,20 @@
             <li class="examples__item">
               <a class="examples__link link" href="">
                 <div class="example-img-thumb">
-                  <img
-                    src="./images/example6.jpg"
+                  <picture>
+                    <source srcset="./images/desktop/example6.jpg 1x, ./images/desktop/example6@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/tablet/example6.jpg 1x, ./images/tablet/example6@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/mobile/example6.jpg 1x, ./images/mobile/example6@2x.jpg 2x" media="(min-width: 480px)" />
+                    <img src="./images/mobile/example6.jpg" class="examples__img" alt="Пример сайта" width="450" height="294"/>
+                  </picture>
+                  <!-- <img
+                  srcset="./images/desktop/example6.jpg 1x, ./images/desktop/example6@2x.jpg 2x"
+                    src="./images/desktop/example6.jpg"
                     class="examples__img"
                     alt="Пример сайта"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="popup-text">
                     Раз-два, раз-два! Горит трава, Взы-взы — стрижает меч, Ува! Ува! И голова
                     Барабардает с плеч!
@@ -243,13 +285,20 @@
             <li class="examples__item">
               <a class="examples__link link" href="">
                 <div class="example-img-thumb">
-                  <img
-                    src="./images/example7.jpg"
+                  <picture>
+                    <source srcset="./images/desktop/example7.jpg 1x, ./images/desktop/example7@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/tablet/example7.jpg 1x, ./images/tablet/example7@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/mobile/example7.jpg 1x, ./images/mobile/example7@2x.jpg 2x" media="(min-width: 480px)" />
+                    <img src="./images/mobile/example7.jpg" class="examples__img" alt="Пример сайта" width="450" height="294"/>
+                  </picture>
+                  <!-- <img
+                  srcset="./images/desktop/example7.jpg 1x, ./images/desktop/example7@2x.jpg 2x"
+                    src="./images/desktop/example7.jpg"
                     class="examples__img"
                     alt="Пример сайта"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="popup-text">
                     О светозарный мальчик мой! Ты победил в бою! О храброславленный герой, Хвалу
                     тебе пою!
@@ -264,13 +313,20 @@
             <li class="examples__item">
               <a class="examples__link link" href="">
                 <div class="example-img-thumb">
-                  <img
-                    src="./images/example8.jpg"
+                  <picture>
+                    <source srcset="./images/desktop/example8.jpg 1x, ./images/desktop/example8@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/tablet/example8.jpg 1x, ./images/tablet/example8@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/mobile/example8.jpg 1x, ./images/mobile/example8@2x.jpg 2x" media="(min-width: 480px)" />
+                    <img src="./images/mobile/example8.jpg" class="examples__img" alt="Пример сайта" width="450" height="294"/>
+                  </picture>
+                  <!-- <img
+                  srcset="./images/desktop/example8.jpg 1x, ./images/desktop/example8@2x.jpg 2x"
+                    src="./images/desktop/example8.jpg"
                     class="examples__img"
                     alt="Пример сайта"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="popup-text">
                     Варкалось. Хливкие шорьки Пырялись по наве. И хрюкотали зелюки, Как мюмзики в
                     мове.
@@ -285,13 +341,20 @@
             <li class="examples__item">
               <a class="examples__link link" href="">
                 <div class="example-img-thumb">
-                  <img
-                    src="./images/example9.jpg"
+                  <picture>
+                    <source srcset="./images/desktop/example9.jpg 1x, ./images/desktop/example9@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/tablet/example9.jpg 1x, ./images/tablet/example9@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/mobile/example9.jpg 1x, ./images/mobile/example9@2x.jpg 2x" media="(min-width: 480px)" />
+                    <img src="./images/mobile/example9.jpg" class="examples__img" alt="Пример сайта" width="450" height="294"/>
+                  </picture>
+                  <!-- <img
+                  srcset="./images/desktop/example9.jpg 1x, ./images/desktop/example9@2x.jpg 2x"
+                    src="./images/desktop/example9.jpg"
                     class="examples__img"
                     alt="Пример сайта"
                     width="370"
                     height="294"
-                  />
+                  /> -->
                   <p class="popup-text">
                     Twas brillig, and the slithy toves Did gyre and gimble in the wabe; All mimsy
                     were the borogoves, And the mome raths outgrabe.
