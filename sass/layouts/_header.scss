@@ -44,12 +44,14 @@
   @media screen and (max-width: calc($tablet - 1px) ) {
     display: none;
   
-    position: absolute;
+    // position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    // height: 100vh;
-    height: 798px;
+    // width: 100%;
+    width: 100vw;
+    height: 100vh;
+    // height: 798px;
     // left: 0;
     // top: 0;
     // right: 0;
@@ -57,9 +59,11 @@
     padding: 48px 40px;
     background-color: var(--white-color);
     z-index: 10;
-
+      overflow-y: scroll;
+      
     &.is-open {
       display: block;
+        // overflow-y: scroll;
     }
 
   }
@@ -219,6 +223,9 @@
   display: flex;
   &__item {
     @include fonts(18px, 500, 1.222, 0.02em);
+    @media screen and (max-width: 460px) {
+      @include fonts(14px, 500, 1.222, 0.02em);
+    }
       color: var(--accent-color);
       padding: 0 10px;
       &:not(:last-child) {
