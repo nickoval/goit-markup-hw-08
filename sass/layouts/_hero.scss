@@ -1,3 +1,5 @@
+$hero-bg-gradient: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), var(--hero-gradient-color));
+
 .hero {
   max-width: 1600px;
   margin: 0 auto;
@@ -13,35 +15,27 @@
   text-align: center;
 
 
-  background-image: linear-gradient(to bottom,
-      var(--hero-gradient-color),
-      var(--hero-gradient-color)), url(../images/mobile/hero.jpg);
+  background-image: $hero-bg-gradient, url(../images/mobile/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/mobile/hero@2x.jpg);
+        background-image: $hero-bg-gradient, url(../images/mobile/hero@2x.jpg);
   }
 
-  @media screen and (min-width: $mobile) {
-  background-image: linear-gradient(to bottom,
-      var(--hero-gradient-color),
-      var(--hero-gradient-color)), url(../images/tablet/hero.jpg);
+  @media screen and (min-width: $mobile) 
+  {background-image: $hero-bg-gradient, url(../images/tablet/hero.jpg);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(../images/tablet/hero@2x.jpg);
+    (min-resolution: 2dppx) {background-image: $hero-bg-gradient, url(../images/tablet/hero@2x.jpg);
     }
   }
   
-  @media screen and (min-width: $tablet) {
-  background-image: linear-gradient(to bottom,
-      var(--hero-gradient-color),
-      var(--hero-gradient-color)), url(../images/desktop/hero.jpg);
+  @media screen and (min-width: $tablet) 
+  {background-image: $hero-bg-gradient, url(../images/desktop/hero.jpg);
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(../images/desktop/hero@2x.jpg);
+    (min-resolution: 192dpi), (min-resolution: 2dppx) 
+      {background-image: $hero-bg-gradient, url(../images/desktop/hero@2x.jpg);
     }
   }
 
@@ -67,10 +61,6 @@
       width: 696px;
       @include fonts(44px, 900, 1.364, 0.06em);
     }
-
-    // font-size: 44px;
-    // font-weight: 900;
-    // line-height: 1.364;
-    // letter-spacing: 0.06em;
   }
+  
 }
